@@ -7,17 +7,6 @@
     font-weight: 400px;
     font-style: normal;
 }
-@media screen and (max-width: 576px) {
-    .nav {
-        flex-direction: column;
-    }
-    .temes {
-        flex-direction: column;
-    }
-    .time-img-continer {
-        grid-template-columns: 4, 1fr;
-    }   
-}
 .header {
     background-color: rgba(255, 144, 14, 0.1);
 }
@@ -87,10 +76,49 @@ main {
 .temes {
     display: flex;
     align-items: center;
-    gap: 40px;
 }
 .time-img-continer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
+}
+.our-features {
+    margin-left: 100px;
+    width: 530px;
+}
+.futurs-titel {
+    font-size: 45px;
+}
+.fuature-descripton {
+    font-size: 16px;
+}
+#part1 {
+    color: #727272;
+}
+#part2 {
+    color: #131313;
+}
+#part3 {
+    color: #FF900E;
+}
+
+
+
+
+@media screen and (max-width: 576px) {
+    .nav, .temes {
+        flex-direction: column;
+    }
+    .time-img-continer {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .our-features {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+@media screen and (min-width: 576px) and (max-width: 1000px) {
+    .temes {
+        flex-direction: column;
+    }
 }

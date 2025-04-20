@@ -114,7 +114,41 @@ main {
 
 
 
-
+.section-titel {
+    font-size: 45px;
+    color: #131313;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.sectionp {
+    color: #727272;
+    margin-top: 5px;
+    margin-bottom: 100px;
+    width: 520px;
+}
+.facts-container {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+}
+.fact {
+    border-radius: 5px;
+    border: solid 2px #FF900E;
+    width: 180px;
+    height: 130px;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+}
+.fact-number {
+    font-size: 2.5rem;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.fact-name {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
 
 
 
@@ -131,7 +165,9 @@ main {
 
 
 @media screen and (max-width: 576px) {
-    .nav, .temes {
+    .nav,
+    .temes
+     {
         flex-direction: column;
     }
     .time-img-continer {
@@ -140,6 +176,11 @@ main {
     .our-features {
         width: 100%;
         margin: 0 auto;
+    }
+    .facts-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
     }
 }
 @media screen and (min-width: 576px) and (max-width: 1000px) {

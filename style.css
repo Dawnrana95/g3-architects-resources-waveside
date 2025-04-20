@@ -10,6 +10,7 @@
 .header {
     background-color: rgba(255, 144, 14, 0.1);
 }
+/* header */
 .nav {
     display: flex;
     justify-content: space-between;
@@ -66,6 +67,8 @@
     border-radius: 10px;
 }
 /* Main */
+
+/* section 1 */
 main > section {
     margin-top: 100px;
 }
@@ -113,7 +116,7 @@ main {
 
 
 
-
+/* section 3 */
 .section-titel {
     font-size: 45px;
     color: #131313;
@@ -124,7 +127,7 @@ main {
     color: #727272;
     margin-top: 5px;
     margin-bottom: 100px;
-    width: 520px;
+    width: 540px;
 }
 .facts-container {
     display: flex;
@@ -148,6 +151,23 @@ main {
 .fact-name {
     margin-top: 5px;
     margin-bottom: 10px;
+}
+/* section 4 */
+.section-box {
+    margin: 0 auto;
+    text-align: center;
+}
+.section-pp {
+    color: #727272;
+}
+.imag-box {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+.imag-box > img {
+    width: 140px;
+    height: 40px;
+    filter: grayscale(100%);
 }
 
 
@@ -182,9 +202,20 @@ main {
         align-items: center;
         gap: 20px;
     }
+    .sectionp {
+        width: 100%;
+    }
+    .imag-box {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 24px;
+    }
 }
 @media screen and (min-width: 576px) and (max-width: 1000px) {
     .temes {
         flex-direction: column;
+    }
+    .imag-box {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
